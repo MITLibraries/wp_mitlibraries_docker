@@ -3,12 +3,16 @@
         {
             "type":"composer",
             "url":"https://wpackagist.org"
+        },
+        {
+            "type":"vcs",
+            "url":"https://github.com/mitlibraries/mitlibraries-parent"
         }
     ],
     "require": {
-        "wpackagist-plugin/akismet":"^4.1",
-        "wpackagist-plugin/bbpress":">=2.5.12",
-        "wpackagist-theme/twentynineteen":"*",
+        "wpackagist-plugin/akismet": "^4.1",
+        "wpackagist-plugin/bbpress": ">=2.5.12",
+        "wpackagist-theme/twentynineteen": "*",
         "wpackagist-plugin/acf-image-crop-add-on": "^1.4",
         "wpackagist-plugin/add-category-to-pages": "^1.2",
         "wpackagist-plugin/addthis": "^6.2",
