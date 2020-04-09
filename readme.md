@@ -1,33 +1,30 @@
 # Local Dev for MIT Wordpress
 
-## clone this repo
+## Clone this repo
 
 - git clone
 - cd into it
 - proceed to setup wordpress
 
-## Setup wordpress
+## Setup WordPress
 
-- docker-compose up
-- http://localhost:8000/wp-admin/
-- don't forget the password you make (when you do, you can delete the docker DB
-  filesystem and start over)
+- `docker-compose up`
+- Visit http://localhost:8000/ in your browser of choice to complete the Five Minute Setup. When you see the Wordpress Admin interface, you are done with this step.
+- Do not forget the password you make here! (When you do, you can delete the docker DB filesystem and start over)
 
-## checkout our local themes and plugins as git repos
+## Check out locally-developed code
 
-- docker-compose down (if it's running)
-- git clone git@github.com:MITLibraries/MITlibraries-parent.git wp-content/themes/MITlibraries-parent
-- do stuff the themes / plugins need, ex parent needs `npm install; grunt`
-- (repeat for whatever you need)
-- docker-compose up
-- wp-admin and activate themes / plugins
-- wp-admin set a default page
+- `composer setup` (or just run `post-setup.sh`) from the repository root. This will clone all projects, as well as install and run the build step for our themes.
+- Visit http://localhost:8000/wp-admin/themes.php to see the installed (and built) themes.
+- Enable the Parent theme using the link provided.
+- Load the sample page at http://localhost:8000/?page_id=2
+- **Please note** at this point, the homepage at http://localhost:8000/ will be a blank white screen. This is a known issue.
 
-## composer to grab plugins
+## Install community plugins and themes via Composer
 
-- composer install
-- activate whatever you need (I have no idea!) in the wp-admin
+- `composer install`
+- Activate whatever you need (I have no idea!) in the wp-admin.
 
-## content
+## Load site content
 
 - tbd
