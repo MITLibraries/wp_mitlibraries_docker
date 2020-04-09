@@ -49,5 +49,8 @@
         "wpackagist-plugin/wp-security-audit-log": "3.5.2.1",
         "wpackagist-plugin/wp-sentry-integration": "^3.0",
         "wpackagist-plugin/wp-table-reloaded": "^1.9"
+    },
+    "scripts": {
+        "setup": "./post-setup.sh"
     }
 }
