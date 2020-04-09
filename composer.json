@@ -7,6 +7,10 @@
         {
             "type":"vcs",
             "url":"https://github.com/mitlibraries/mitlibraries-parent"
+        },
+        {
+            "type":"vcs",
+            "url":"https://github.com/matt-bernhardt/dvorak"
         }
     ],
     "require": {
@@ -52,6 +56,8 @@
         "wpackagist-plugin/wpcf7-recaptcha": "^1.2",
         "wpackagist-plugin/wp-security-audit-log": "3.5.2.1",
         "wpackagist-plugin/wp-sentry-integration": "^3.0",
-        "wpackagist-plugin/wp-table-reloaded": "^1.9"
+        "wpackagist-plugin/wp-table-reloaded": "^1.9",
+        "mitlibraries/mitlibraries-parent": "1.10.0-beta4",
+        "mjbernha/dvorak": "^0.2.0"
     }
 }
