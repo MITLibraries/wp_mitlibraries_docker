@@ -40,6 +40,7 @@ git clone https://github.com/MITLibraries/mitlib-plugin-canary
 git clone https://github.com/MITLibraries/mitlib-private-debug-log
 git clone https://github.com/MITLibraries/mitlib-pull-hours
 git clone https://github.com/MITLibraries/pull-mit-events
+git clone https://github.mit.edu/mitlibraries/slideshow-gallery
 git clone https://github.com/MITLibraries/wp-home-page-news
 git clone https://github.com/MITLibraries/wp-multisearch-widget
 git clone https://github.com/MITLibraries/wp-pending-posts
