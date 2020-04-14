@@ -50,6 +50,13 @@
         "wpackagist-plugin/wp-sentry-integration": "^3.0",
         "wpackagist-plugin/wp-table-reloaded": "^1.9"
     },
+    "extra": {
+        "wordpress-install-dir": "wp-app",
+        "installer-paths": {
+            "wp-app/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-app/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    },
     "scripts": {
         "setup": "./post-setup.sh"
     }
