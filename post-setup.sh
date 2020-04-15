@@ -1,38 +1,46 @@
 #!/usr/bin/env bash
 
 # Install locally-developed themes
-git clone https://github.com/mitlibraries/mitlibraries-parent ./wp-content/themes/libraries/
-cd wp-content/themes/libraries/
-npm install; grunt
-cd ../../../
+base_dir=$(pwd)
 
-git clone https://github.com/mitlibraries/mitlibraries-child ./wp-content/themes/libraries-child-new/
-cd wp-content/themes/libraries-child-new/
+target_dir=./wp-app/wp-content/themes/libraries/
+git clone https://github.com/mitlibraries/mitlibraries-parent $target_dir
+cd $target_dir
 npm install; grunt
-cd ../../../
+cd $base_dir
 
-git clone https://github.com/mitlibraries/mitlibraries-news ./wp-content/themes/mit-libraries-news/
-cd wp-content/themes/mit-libraries-news/
+target_dir=./wp-app/wp-content/themes/libraries-child-new/
+git clone https://github.com/mitlibraries/mitlibraries-child $target_dir
+cd $target_dir
 npm install; grunt
-cd ../../../
+cd $base_dir
 
-git clone https://github.com/mitlibraries/music-oral-history ./wp-content/themes/music-oral-history/
-cd wp-content/themes/music-oral-history/
+target_dir=./wp-app/wp-content/themes/mit-libraries-news/
+git clone https://github.com/mitlibraries/mitlibraries-news $target_dir
+cd $target_dir
 npm install; grunt
-cd ../../../
+cd $base_dir
 
-git clone https://github.com/mitlibraries/mitlib-courtyard ./wp-content/themes/mitlib-courtyard/
-cd wp-content/themes/mitlib-courtyard/
+target_dir=./wp-app/wp-content/themes/music-oral-history/
+git clone https://github.com/mitlibraries/music-oral-history $target_dir
+cd $target_dir
 npm install; grunt
-cd ../../../
+cd $base_dir
 
-git clone https://github.com/mitlibraries/mitlib-courtyard-blog ./wp-content/themes/mitlib-courtyard-blog/
-cd wp-content/themes/mitlib-courtyard-blog/
+target_dir=./wp-app/wp-content/themes/mitlib-courtyard/
+git clone https://github.com/mitlibraries/mitlib-courtyard $target_dir
+cd $target_dir
 npm install; grunt
-cd ../../../
+cd $base_dir
+
+target_dir=./wp-app/wp-content/themes/mitlib-courtyard-blog/
+git clone https://github.com/mitlibraries/mitlib-courtyard-blog $target_dir
+cd $target_dir
+npm install; grunt
+cd $base_dir
 
 # Install locally-developed plugins
-cd wp-content/plugins
+cd ./wp-app/wp-content/plugins
 git clone https://github.com/MITLibraries/Custom-Child-Theme-Post-Types
 git clone https://github.com/MITLibraries/mitlib-analytics
 git clone https://github.com/MITLibraries/mitlib-cf7-elements
@@ -44,6 +52,6 @@ git clone https://github.com/MITLibraries/wp-home-page-news
 git clone https://github.com/MITLibraries/wp-multisearch-widget
 git clone https://github.com/MITLibraries/wp-pending-posts
 git clone https://github.com/MITLibraries/wp-plugin-template
-cd ../../
+cd $base_dir
 
 # The next steps would be to build out the WordPress network itself...
