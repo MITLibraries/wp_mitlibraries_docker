@@ -58,6 +58,7 @@
         }
     },
     "scripts": {
-        "setup": "./post-setup.sh"
+        "post-install-cmd": "./post-setup.sh",
+        "network": "./network-setup.sh"
     }
 }

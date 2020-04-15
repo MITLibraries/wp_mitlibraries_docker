@@ -16,6 +16,9 @@ plugins: ## List status of plugins
 themes: ## List status of themes
 	docker-compose run --rm wpcli theme list
 
+sites: ## List of sites on network
+	docker-compose run --rm wpcli site list
+
 up: ## Starts WordPress and MySQL
 	docker-compose up -d
 
@@ -27,3 +30,6 @@ drop: ## Drops database. Recreate with `up` then `admin`
 
 admin: up ## Launches admin site in default browser
 	open http://localhost:8000/wp-admin
+
+network:
+	composer network
