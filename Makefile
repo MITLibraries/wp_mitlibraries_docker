@@ -29,7 +29,7 @@ drop: ## Drops database. Recreate with `up` then `admin`
 	docker-compose down -v
 
 admin: up ## Launches admin site in default browser
-	open http://localhost:8000/wp-admin
+	open http://localhost/wp-admin
 
-network:
+network: ## Sets up our multisite network
 	composer network
