@@ -54,4 +54,11 @@ git clone https://github.com/MITLibraries/wp-pending-posts
 git clone https://github.com/MITLibraries/wp-plugin-template
 cd $base_dir
 
+# Install some commercial projects that we've stashed in private repositories
+# because they can't be deployed another way...
+cd ./wp-app/wp-content/plugins
+git clone git@github.mit.edu:mitlibraries/advanced-post-types-order.git
+git clone git@github.mit.edu:mitlibraries/embedit-pro.git
+cd $base_dir
+
 # The next steps would be to build out the WordPress network itself...
