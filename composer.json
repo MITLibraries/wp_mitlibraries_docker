@@ -58,7 +58,7 @@
         }
     },
     "scripts": {
-        "local-plugins": "./loal-plugins.sh",
+        "local-plugins": "./local-plugins.sh",
         "local-themes": "./local-themes.sh",
         "network-install": "./network-install.sh",
         "network-plugins": "./network-plugins.sh",
