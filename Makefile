@@ -31,5 +31,11 @@ drop: ## Drops database. Recreate with `up` then `admin`
 admin: up ## Launches admin site in default browser
 	open http://localhost/wp-admin
 
-network: ## Sets up our multisite network
-	composer network
+network-install: ## Installs our multisite network
+	composer network-install
+
+network-plugins: ## Activates the list of plugins that should be present on all sites
+	composer network-plugins
+
+network-sites: ## Builds the list of sites on the network
+	composer network-sites

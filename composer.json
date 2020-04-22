@@ -58,8 +58,10 @@
         }
     },
     "scripts": {
-        "post-install-cmd": "./post-setup.sh",
-        "network": "./network-setup.sh",
-        "network-plugins": "./network-plugins.sh"
+        "local-plugins": "./loal-plugins.sh",
+        "local-themes": "./local-themes.sh",
+        "network-install": "./network-install.sh",
+        "network-plugins": "./network-plugins.sh",
+        "network-sites": "./network-sites.sh"
     }
 }
