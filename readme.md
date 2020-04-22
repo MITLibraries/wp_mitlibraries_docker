@@ -8,26 +8,32 @@
 
 ## Setup WordPress
 
-- `docker-compose up` or `make admin`
-- Visit http://localhost:8000/ in your browser of choice to complete the Five Minute Setup. When you see the Wordpress Admin interface, you are done with this step.
-- Do not forget the password you make here! (When you do, you can delete the docker DB filesystem and start over: `docker-compose down -v` should do that)
+- `docker-compose up` will initialize the various containers.
+- `make network-install` (or `composer network-install`) will complete the basic WordPress installation. The default username is `admin`. **Be sure to note the randomly-generated password that will appear in the console, as it will not be shown again.**
+- `make network-sites` (or `composer network-sites`) will define the current set up sites on our network, with the expected site ID values. There should be roughly two dozen sites at the end, which can be listed via `make sites`.
+- Visit http://localhost/wp-admin/network/setup.php to get the needed Apache .htaccess rewrite rules you need to enable access to site dashboards. These rules should overwrite what is in `./wp-app/.htaccess`.
 
 ## Check out locally-developed code
 
-- `composer setup` (or just run `post-setup.sh`) from the repository root. This will clone all projects, as well as install and run the build step for our themes.
-- Visit http://localhost:8000/wp-admin/themes.php to see the installed (and built) themes.
-- Enable the Parent theme using the link provided.
-- Load the sample page at http://localhost:8000/?page_id=2
-- **Please note** at this point, the homepage at http://localhost:8000/ will be a blank white screen. This is a known issue.
+- `make install` (or `composer install`) will download the contributed plugins and themes we use, and then call the script which installs and builds our local projects.
+- Locally-developed themes and plugins can be installed via `composer local-themes` and `composer local-plugins`. These steps will also install and run needed build steps for each theme.
 
-## Install community plugins and themes via Composer
+## Enabling plugins
 
-- `composer install` or `make install`
-- Activate whatever you need (I have no idea!) in the wp-admin.
+- After all plugins have been installed, running `make network-plugins` (or `composer network-plugins`) will enable the set of plugins that needs to be present on every site.
+- Plugins that need to be individually enabled on a given site are beyond the scope of our current tooling.
+
+## Enabling themes
+
+- Visit http://localhost/wp-admin/network/themes.php to see the installed (and built) themes.
+- Use the links on this dashboard to Network Enable the themes you need. This will almost always include the Parent theme, as well as whatever child theme you need.
+- After themes have been network enabled, you can visit the dashboard for any particular site and chose which theme it should use. For the parent site, that should be http://localhost/wp-admin/network/themes.php .
+- Load the sample page at http://localhost/?page_id=2
+- **Please note** at this point, the homepage at http://localhost/ will be a blank white screen. This is a known issue.
 
 ## Load site content
 
-- tbd
+- This step is beyond our current tooling...
 
 ## Reset your dev environment entirely
 
