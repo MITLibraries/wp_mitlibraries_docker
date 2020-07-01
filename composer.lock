@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da2a53fda97bf2687c3ae3354013362c",
+    "content-hash": "1b640919c86394770d9f497cbc7f903b",
     "packages": [
         {
             "name": "composer/installers",
@@ -651,6 +651,24 @@
             "homepage": "https://wordpress.org/plugins/seamless-sticky-custom-post-types/"
         },
         {
+            "name": "wpackagist-plugin/shibboleth",
+            "version": "2.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/shibboleth/",
+                "reference": "tags/2.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/shibboleth.2.2.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/shibboleth/"
+        },
+        {
             "name": "wpackagist-plugin/tablepress",
             "version": "1.10",
             "source": {
@@ -910,5 +928,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

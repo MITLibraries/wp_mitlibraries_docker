@@ -48,7 +48,8 @@
         "wpackagist-plugin/wpcf7-recaptcha": "^1.2",
         "wpackagist-plugin/wp-security-audit-log": "3.5.2.1",
         "wpackagist-plugin/wp-sentry-integration": "^3.0",
-        "wpackagist-plugin/wp-table-reloaded": "^1.9"
+        "wpackagist-plugin/wp-table-reloaded": "^1.9",
+        "wpackagist-plugin/shibboleth": "^2.2"
     },
     "extra": {
         "wordpress-install-dir": "wp-app",
