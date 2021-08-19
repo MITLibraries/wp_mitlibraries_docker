@@ -5,6 +5,7 @@ cd ./wp-app/wp-content/plugins
 git clone https://github.com/MITLibraries/Custom-Child-Theme-Post-Types
 git clone https://github.com/MITLibraries/mitlib-analytics
 git clone https://github.com/MITLibraries/mitlib-cf7-elements
+git clone https://github.com/MITLibraries/mitlib-page-customization-metabox.git
 git clone https://github.com/MITLibraries/mitlib-plugin-canary
 git clone https://github.com/MITLibraries/mitlib-private-debug-log
 git clone https://github.com/MITLibraries/mitlib-pull-hours
@@ -20,4 +21,5 @@ cd $base_dir
 cd ./wp-app/wp-content/plugins
 git clone git@github.mit.edu:mitlibraries/advanced-post-types-order.git
 git clone git@github.mit.edu:mitlibraries/embedit-pro.git
+git clone git@github.mit.edu:mitlibraries/slideshow-gallery.git
 cd $base_dir
