@@ -51,7 +51,8 @@
         "wpackagist-plugin/shibboleth": "^2.2",
         "composer/installers": "^1.9",
         "wpackagist-plugin/classic-widgets": "^0.2.0",
-        "wpackagist-plugin/enable-media-replace": "^3.5"
+        "wpackagist-plugin/enable-media-replace": "^3.5",
+        "wpackagist-plugin/shortcode-variables": "^3.5"
     },
     "extra": {
         "wordpress-install-dir": "wp-app",
