@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24ed8a962c68d05dccf2fff7aedf8ff9",
+    "content-hash": "a8750d585c269508f6ccb7b288a80233",
     "packages": [
         {
             "name": "composer/installers",
@@ -682,6 +682,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/shibboleth/"
+        },
+        {
+            "name": "wpackagist-plugin/shortcode-variables",
+            "version": "3.5.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/shortcode-variables/",
+                "reference": "tags/3.5.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/shortcode-variables.3.5.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/shortcode-variables/"
         },
         {
             "name": "wpackagist-plugin/tablepress",
