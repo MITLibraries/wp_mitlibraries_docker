@@ -24,12 +24,10 @@
         "wpackagist-plugin/cpt-onomies": "^1.4",
         "wpackagist-plugin/custom-post-type-ui": "^1.7",
         "wpackagist-plugin/google-sitemap-generator": "^4.1",
-        "wpackagist-plugin/gutenberg": "^11",
-        "wpackagist-plugin/img-title-removal": "^1.1",
-        "wpackagist-plugin/improved-include-page": "^1.2",
+        "wpackagist-plugin/gutenberg": "^13",
         "wpackagist-plugin/insert-html-snippet": "^1.3",
-        "wpackagist-plugin/jetpack": "^10",
-        "wpackagist-plugin/media-library-assistant": "^2.81",
+        "wpackagist-plugin/jetpack": "^11",
+        "wpackagist-plugin/media-library-assistant": "^3",
         "wpackagist-plugin/notification": "^8",
         "wpackagist-plugin/p3-profiler": "^1",
         "wpackagist-plugin/page-links-to": "^3.2",
@@ -47,12 +45,12 @@
         "wpackagist-plugin/wordpress-importer": "^0.7.0",
         "wpackagist-plugin/wpcf7-recaptcha": "^1.2",
         "wpackagist-plugin/wp-security-audit-log": "^4.1",
-        "wpackagist-plugin/wp-sentry-integration": "^4",
+        "wpackagist-plugin/wp-sentry-integration": "^5",
         "wpackagist-plugin/shibboleth": "^2.2",
         "composer/installers": "^1.9",
-        "wpackagist-plugin/classic-widgets": "^0.2.0",
+        "wpackagist-plugin/classic-widgets": "^0.3",
         "wpackagist-plugin/enable-media-replace": "^3.5",
-        "wpackagist-plugin/shortcode-variables": "^3.5"
+        "wpackagist-plugin/shortcode-variables": "^4"
     },
     "extra": {
         "wordpress-install-dir": "wp-app",
@@ -67,5 +65,10 @@
         "network-install": "./network-install.sh",
         "network-plugins": "./network-plugins.sh",
         "network-sites": "./network-sites.sh"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
     }
 }
